@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="18568" started-at="2023-01-10T15:22:46 AEDT" finished-at="2023-01-10T15:23:05 AEDT">
+    <groups>
+    </groups>
+    <test name="NSE Data Extraction" duration-ms="18568" started-at="2023-01-10T15:22:46 AEDT" finished-at="2023-01-10T15:23:05 AEDT">
+      <class name="ExtractDerivativeData">
+        <test-method status="PASS" signature="fetchDerivativeData()[pri:0, instance:ExtractDerivativeData@2145960d, instance params:[{expiryDate=12-Jan-2023, symbol=NIFTY, strikePrice=18100, pointDifference=50, strikePriceVariation=7}]]" name="fetchDerivativeData" duration-ms="6900" started-at="2023-01-10T15:22:46 AEDT" finished-at="2023-01-10T15:22:53 AEDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchDerivativeData -->
+        <test-method status="PASS" signature="writeTargetedStrikePriceData()[pri:0, instance:ExtractDerivativeData@2145960d, instance params:[{expiryDate=12-Jan-2023, symbol=NIFTY, strikePrice=18100, pointDifference=50, strikePriceVariation=7}]]" name="writeTargetedStrikePriceData" duration-ms="4410" started-at="2023-01-10T15:22:53 AEDT" depends-on-methods="ExtractDerivativeData.fetchDerivativeData" finished-at="2023-01-10T15:22:58 AEDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeTargetedStrikePriceData -->
+        <test-method status="PASS" signature="marketDirectionData()[pri:0, instance:ExtractDerivativeData@2145960d, instance params:[{expiryDate=12-Jan-2023, symbol=NIFTY, strikePrice=18100, pointDifference=50, strikePriceVariation=7}]]" name="marketDirectionData" duration-ms="394" started-at="2023-01-10T15:22:58 AEDT" depends-on-methods="ExtractDerivativeData.writeTargetedStrikePriceData" finished-at="2023-01-10T15:22:58 AEDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marketDirectionData -->
+        <test-method status="PASS" signature="fetchDerivativeData()[pri:0, instance:ExtractDerivativeData@5f2ec11d, instance params:[{expiryDate=12-Jan-2023, symbol=BANKNIFTY, strikePrice=42600, pointDifference=100, strikePriceVariation=7}]]" name="fetchDerivativeData" duration-ms="4437" started-at="2023-01-10T15:22:58 AEDT" finished-at="2023-01-10T15:23:02 AEDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchDerivativeData -->
+        <test-method status="PASS" signature="writeTargetedStrikePriceData()[pri:0, instance:ExtractDerivativeData@5f2ec11d, instance params:[{expiryDate=12-Jan-2023, symbol=BANKNIFTY, strikePrice=42600, pointDifference=100, strikePriceVariation=7}]]" name="writeTargetedStrikePriceData" duration-ms="2145" started-at="2023-01-10T15:23:02 AEDT" depends-on-methods="ExtractDerivativeData.fetchDerivativeData" finished-at="2023-01-10T15:23:05 AEDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeTargetedStrikePriceData -->
+        <test-method status="PASS" signature="marketDirectionData()[pri:0, instance:ExtractDerivativeData@5f2ec11d, instance params:[{expiryDate=12-Jan-2023, symbol=BANKNIFTY, strikePrice=42600, pointDifference=100, strikePriceVariation=7}]]" name="marketDirectionData" duration-ms="243" started-at="2023-01-10T15:23:05 AEDT" depends-on-methods="ExtractDerivativeData.writeTargetedStrikePriceData" finished-at="2023-01-10T15:23:05 AEDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marketDirectionData -->
+      </class> <!-- ExtractDerivativeData -->
+    </test> <!-- NSE Data Extraction -->
+  </suite> <!-- Suite -->
+</testng-results>
